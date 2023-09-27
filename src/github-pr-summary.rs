@@ -161,7 +161,7 @@ async fn handler(
     }
 
     let chat_id = format!("PR#{pull_number}");
-    let system = &format!("You are an experienced software developer. You will act as a reviewer for a GitHub Pull Request titled \"{}\".", title);
+    let system = &format!("You are an experienced C++ software developer. You will act as a reviewer for a GitHub Pull Request titled \"{}\".", title);
     let mut openai = OpenAIFlows::new();
     openai.set_retry_times(3);
 
